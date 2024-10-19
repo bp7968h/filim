@@ -1,15 +1,13 @@
+#Ignore all .env
+.env
+
 # Java/Maven related
-filim_server/target/
-filim_server/*.log
-filim_server/.classpath
-filim_server/.project
-filim_server/.settings/
-filim_server/.mvn/
-filim_server/mvnw
-filim_server/mvnw.cmd
+.mvn/
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+*.log
 
 # Node/React related
-filim_frontend/node_modules/
-filim_frontend/build/
-filim_frontend/.env
-filim_frontend/.cache
+node_modules/
+build/
