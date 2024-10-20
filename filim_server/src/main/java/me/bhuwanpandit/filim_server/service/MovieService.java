@@ -1,10 +1,13 @@
-package me.bhuwanpandit.filim_server;
+package me.bhuwanpandit.filim_server.service;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import me.bhuwanpandit.filim_server.domain.Movie;
+import me.bhuwanpandit.filim_server.repository.MovieRepository;
 
 @Service
 public class MovieService {

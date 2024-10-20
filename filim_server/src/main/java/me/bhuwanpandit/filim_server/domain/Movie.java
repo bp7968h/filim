@@ -1,4 +1,4 @@
-package me.bhuwanpandit.filim_server;
+package me.bhuwanpandit.filim_server.domain;
 
 import java.util.List;
 
