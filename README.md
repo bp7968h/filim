@@ -59,4 +59,4 @@ The frontend uses React to interact with the backend:
 - Shows detailed information about a specific movie when selected.
 - Allows users to add a review to a movie.
 
-###Happy Coding! 🚀🎥
+Happy Coding! 🚀🎥
