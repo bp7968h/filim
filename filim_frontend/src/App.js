@@ -1,5 +1,9 @@
+import './App.css';
 import api from './api/axiosConfig';
 import {useState, useEffect} from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './components/home/Home';
 
 function App() {
   const [movies, setMovies] = useState();
@@ -20,7 +24,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <Routes>
+        <Route path='/' element={<Layout />} >
+          <Route path='/' element={movies ? <Home movies={movies} /> : <h2>Loading...</h2>} />
+        </Route>
+      </Routes>
     </div>
   );
 }
