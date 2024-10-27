@@ -1,11 +1,11 @@
 .movie-carousel-container {
-    width: 100vh;
+    /* width: 100vh; */
     background-color: black;
 }
 
 .movie-poster {
     height: 300px;
-    border: 1px solid gold;
+    border: 1px solid #39e75f;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -39,4 +39,38 @@
     color: white;
     display: flex;
     align-items: center;
+}
+
+.movie-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.play-button-icon-container {
+    padding: 0px;
+    margin: 0px;
+    width: 150px;
+}
+
+.play-button-icon {
+    padding: 0px;
+    margin: 0px;
+    color: #39e75f;
+    font-size: 3rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.play-button-icon:hover {
+    font-size: 4rem;
+    color: #abf7b1;
+}
+
+@media only screen and (max-width: 800px) {
+    .movie-detail {
+        flex-direction: column;
+        align-items: center;
+    }
 }
