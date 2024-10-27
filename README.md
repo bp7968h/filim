@@ -26,6 +26,22 @@ git clone git@github.com:bp7968h/filim.git
 cd filim
 ```
 
+### 2. Starting with Docker
+A Dockerfile is available in both the frontend and backend directories, and docker-compose.yml is in the root directory for easy setup.
+
+- Build and start
+Use Docker Compose to build and run both frontend and backend containers:
+```bash
+docker-compose up --build
+```
+The backend will run on `http://localhost:8080` and the frontend on `http://localhost:3000`.
+
+- Stopping the Containers
+To stop the containers, run:
+```bash
+docker-compose down
+```
+
 ### 2. Start the backend
 
 You can run the server locally using maven. This starts the project on `http://localhost:8080`
@@ -58,5 +74,16 @@ The frontend uses React to interact with the backend:
 - Displays a list of movies on the homepage.
 - Shows detailed information about a specific movie when selected.
 - Allows users to add a review to a movie.
+
+## Page Highlights
+
+### Home page
+![Home page](./assets/home_page.png)
+
+### Review page
+![Review page](./assets/review_page.png)
+
+### Trailer page
+![Trailer page](./assets/trailer_page.png)
 
 Happy Coding! 🚀🎥
